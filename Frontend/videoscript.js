@@ -5,6 +5,7 @@ const socket = io(baseurl, { transports: ["websocket"] });
 let localStream;
 let remoteStream;
 let peerConnection;
+let didIOffer = false ;
 
 const localVidBox = document.getElementById("local-video");
 const remoteVidBox = document.getElementById("remote-video");
