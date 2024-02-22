@@ -67,7 +67,7 @@ const fetchUserMedia = () => {
     try {
       const stream = await navigator.mediaDevices.getUserMedia({
         video: true,
-        audio: true,
+        // audio: true,
       });
       localVidBox.srcObject = stream;
       localStream = stream;
